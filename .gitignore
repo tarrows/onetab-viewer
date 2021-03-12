@@ -1,0 +1,12 @@
+node_modules
+.next
+.DS_Store
+db.sqlite3
+
+config/*
+!.gitkeep
+
+.env*
+
+data/*
+!.gitkeep
