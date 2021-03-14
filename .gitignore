@@ -1,7 +1,8 @@
 node_modules
 .next
 .DS_Store
-db.sqlite3
+db.sqlite3*
+migrations
 
 config/*
 !.gitkeep

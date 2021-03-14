@@ -10,12 +10,10 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model Story {
-  id Int @id
-  type String
-  title String
-  by String
-  time Int
-  score Int
-  url String
+model Feed {
+  id     Int    @id @default(autoincrement())
+  title  String
+  url    String
+  date   String
+  domain String
 }
