@@ -15,11 +15,11 @@ type Props = {
 
 const IndexPage: NextPage<Props> = (props) => (
   <main>
-    <Container maxW="container.xl">
+    <Container maxW="container.lg">
       <Heading>{props.count} Feeds</Heading>
       <Stack spacing={1}>
         {props.feeds.filter(feed => feed.domain.length > 0).map(feed => (
-          <Box p={5} shadow="md" flex={1} borderRadius="md">
+          <Box key={feed.id} p={5} shadow="md" flex={1} borderRadius="md">
             <Heading fontSize="xl">[{feed.date}][{feed.domain}]</Heading>
             <Text mt={2} key={feed.id}>
               <Link href={feed.url}>{feed.title}</Link>
